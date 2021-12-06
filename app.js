@@ -1,52 +1,52 @@
 document.addEventListener('DOMContentLoaded', () => {
   const cardArray = [
     {
-      name: 'milkshake',
-      img: 'images/milkshake.png',
+      name: 'flapjack1',
+      img: 'images/flapjack1.jpg',
     },
     {
-      name: 'milkshake',
-      img: 'images/milkshake.png',
+      name: 'flapjack1',
+      img: 'images/flapjack1.jpg',
     },
     {
-      name: 'cheeseburger',
-      img: 'images/cheeseburger.png',
+      name: 'flapjack2',
+      img: 'images/flapjack2.jpg',
     },
     {
-      name: 'cheeseburger',
-      img: 'images/cheeseburger.png',
+      name: 'flapjack2',
+      img: 'images/flapjack2.jpg',
     },
     {
-      name: 'figure1',
-      img: 'images/figure1.png',
+      name: 'flapjack3',
+      img: 'images/flapjack3.jpg',
     },
     {
-      name: 'figure1',
-      img: 'images/figure1.png',
+      name: 'flapjack3',
+      img: 'images/flapjack3.jpg',
     },
     {
-      name: 'figure2',
-      img: 'images/figure1.png',
+      name: 'flapjack4',
+      img: 'images/flapjack4.jpg',
     },
     {
-      name: 'figure2',
-      img: 'images/figure1.png',
+      name: 'flapjack4',
+      img: 'images/flapjack4.jpg',
     },
     {
-      name: 'fries',
-      img: 'images/fries.png',
+      name: 'flapjack5',
+      img: 'images/flapjack5.jpg',
     },
     {
-      name: 'fries',
-      img: 'images/fries.png',
+      name: 'flapjack5',
+      img: 'images/flapjack5.jpg',
     },
     {
-      name: 'hotdog',
-      img: 'images/hotdog.png',
+      name: 'flapjack6',
+      img: 'images/flapjack6.jpg',
     },
     {
-      name: 'hotdog',
-      img: 'images/hotdog.png',
+      name: 'flapjack6',
+      img: 'images/flapjack6.jpg',
     },
   ];
 
@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
     cardsChosenId = [];
     resultDisplay.textContent = cardsWon.length;
     if (cardsWon.length === cardArray.length / 2) {
-      resultDisplay.textContent = 'Congratulations! You found them all!';
+      resultDisplay.textContent = 'All flapjacks found!';
     }
   }
 
@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
     cardsChosenId.push(cardId);
     this.setAttribute('src', cardArray[cardId].img);
     if (cardsChosen.length === 2) {
-      setTimeout(checkForMatch, 500);
+      setTimeout(checkForMatch, 400);
     }
   }
 
